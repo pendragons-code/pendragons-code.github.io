@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:800|Merriweather+Sans|Share+Tech+Mono");
+
+:root {
+	--ui-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06),
+	0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
+	fill: rgba(0, 0, 0, 0.54);
+	--ui-shadow-border: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+	"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+	sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+body:hover {
+cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/meh.png"), auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8 {
+	font-family: "Raleway", sans-serif;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+	user-select: none;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+}
+
+.View {
+	flex: 1;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	background-size: cover;
+	font-family: "Merriweather Sans", sans-serif;
+}
+
+.Banner {
+	animation: fadeIn linear 1s;
+	-webkit-animation: fadeIn linear 1s;
+	-moz-animation: fadeIn linear 1s;
+	-o-animation: fadeIn linear 1;
+	-ms-animation: fadeIn linear 1s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	border-radius: 5px;
+	transition-duration: 0.2s;
+	overflow: hidden;
+	color: white;
+	padding: 15px;
+	background: rgba(0, 0, 0, 0.5);
+	font-family: "Share Tech Mono", monospace;
+	border: 2px solid #2A5579;
+	box-shadow: var(--ui-shadow);
+}
+
+.Banner:hover {
+	background: rgb(42, 72, 121, 0.5);
+	padding: 25px;
+	cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/meh.png"), auto;
+}
+
+.Message {
+	animation: fadeIn linear 1s;
+	-webkit-animation: fadeIn linear 1s;
+	-moz-animation: fadeIn linear 1s;
+	-o-animation: fadeIn linear 1;
+	-ms-animation: fadeIn linear 1s;
+	border: 2px solid #2A5579;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: "Share Tech Mono", monospace;
+	align-items: center;
+	padding: 35px;
+	box-shadow: var(--ui-shadow);
+	background: rgba(0, 0, 0, 0.5);
+  }
+
+.Message > .Title {
+	display: flex;
+	justify-content: center;
+	font-family: "Share Tech Mono", monospace;
+	padding-bottom: 8px;
+	flex-direction: column;
+}
+
+.Message > .Details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "Share Tech Mono", monospace;
+	line-height: 1.5em;
+}
+
+.Message:hover {
+	background: rgb(42, 72, 121, 0.5);
+	padding: 42px;
+	cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/meh.png"), auto;
+}
+
+.button {
+	display: flex;
+	flex-direction: row;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.2s;
+	cursor: pointer;
+	align-items: center;
+	animation: fadeIn linear 1s;
+	-webkit-animation: fadeIn linear 1s;
+	-moz-animation: fadeIn linear 1s;
+	-o-animation: fadeIn linear 1;
+	-ms-animation: fadeIn linear 1s;
+}
+
+.WelcomeView {
+	background: url("/images/wallpaper3.gif") left bottom;
+	animation: fadeIn linear 0.5s;
+	-webkit-animation: fadeIn linear 0.5s;
+	-moz-animation: fadeIn linear 0.5s;
+	-o-animation: fadeIn linear 0.5;
+	-ms-animation: fadeIn linear 0.5s;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+.NavButton {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-family: "Share Tech Mono", monospace;
+	height: 40px;
+	width: 200px;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	border: 2px solid #4CAF50;
+	box-shadow: var(--ui-shadow);
+	text-transform: capitalize;
+	transition-duration: 0.2s;
+	animation: fadeIn linear 1s;
+	-webkit-animation: fadeIn linear 1s;
+	-moz-animation: fadeIn linear 1s;
+	-o-animation: fadeIn linear 1;
+	-ms-animation: fadeIn linear 1s;
+}
+
+.NavButton:hover {
+ 	background-color: #4CAF50;
+ 	color: white;
+ 	flex-direction: row;
+ 	display: flex;
+ 	height: 45px;
+ 	width: 205px;
+}
+
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@-moz-keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@-o-keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@-ms-keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.pac-man {
+	 margin: 0 auto;
+	 border-radius: 100em 100em 0 0;
+	 background: #f00;
+	 transform-origin: bottom;
+	 animation: eating-top .5s infinite;
+}
+
+.pac-man, .pac-man::before {
+	 width: 70px;
+	 height: calc(35px);
+	 background: #fed75a;
+}
+ 
+.pac-man::before {
+	 content: '';
+	 display: block;
+	 margin-top: calc(35px);
+	 position: absolute;
+	 transform-origin: top;
+	 border-radius: 0 0 100em 100em;
+	 transform: rotate(80deg);
+	 animation: eating-bottom .5s infinite;
+}
+.pac-man::after {
+	 position: absolute;
+	 border-radius: 100em;
+	 content: '';
+	 display: block;
+	 height: 20px;
+	 width: 20px;
+	 margin-top: calc(25px);
+	 margin-left: calc(25px);
+	 transform-origin: center;
+	 animation: center .5s infinite, ball .5s -0.33s infinite linear;
+}
+
+ @keyframes eating-top {
+	 0% {
+		 transform: rotate(-40deg);
+	}
+	 50% {
+		 transform: rotate(0deg);
+	}
+	 100% {
+		 transform: rotate(-40deg);
+	}
+}
+ @keyframes eating-bottom {
+	 0% {
+		 transform: rotate(80deg);
+	}
+	 50% {
+		 transform: rotate(0deg);
+	}
+	 100% {
+		 transform: rotate(80deg);
+	}
+}
+ @keyframes center {
+	 0% {
+		 transform: rotate(40deg);
+	}
+	 50% {
+		 transform: rotate(0deg);
+	}
+	 100% {
+		 transform: rotate(40deg);
+	}
+}
+ @keyframes ball {
+	 0% {
+		 opacity: .7;
+		 box-shadow: 70px 0 0 0 #fed75a, 120px 0 0 0 #fed75a, 170px 0 0 0 #fed75a
+	}
+	 100% {
+		 box-shadow: 20px 0 0 0 #fed75a, 70px 0 0 0 #fed75a, 120px 0 0 0 #fed75a
+	}
+}
+
+blink {
+	-webkit-animation: 1.5s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+	animation: 1.5s linear infinite condemned_blink_effect;
+}
+
+@-webkit-keyframes condemned_blink_effect {
+	0% {
+	  visibility: hidden;
+	}
+	50% {
+	  visibility: hidden;
+	}
+	100% {
+	  visibility: visible;
+	}
+  }
+  
+@keyframes condemned_blink_effect {
+	0% {
+	  visibility: hidden;
+	}
+	50% {
+	  visibility: hidden;
+	}
+	100% {
+	  visibility: visible;
+	}
+  }
+  
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  
+@-moz-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  
+@-webkit-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+  
+@-o-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+  
+@-ms-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}

@@ -1,0 +1,18 @@
+extends layout
+block layout-content
+	
+	div.View.WelcomeView
+		h2.Banner 🍌 Error 404.<Blink>_
+
+		div.Message
+			div.Title
+				h2(style="text-align:center;") Error: 𝟰𝟬𝟰 <br><br>
+				h3(style="text-align:center;") We cannot find the page you requested for!<br><br>
+				h3(style="text-align:center;") Check that you have typed in the correct url!
+				h3(style="text-align:center;") Please contact the dev if you were expecting something else!
+			div.Details
+				a(href="https://pendragonscode.xyz")
+					h6(style="color:#42daf5;") <br><br><br><u>My personal site!</u>
+	
+		a(href="/")
+			div.NavButton 🏠 Home

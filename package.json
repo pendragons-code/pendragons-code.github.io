@@ -1,0 +1,18 @@
+{
+  "name": "jellypan.club",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./loaders/webserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "pug": "^3.0.2"
+  }
+}
