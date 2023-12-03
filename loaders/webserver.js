@@ -19,6 +19,7 @@ app.use("/", frontEnd)
 app.set("view engine", "pug")
 app.set("views", join(__dirname, "../frontEnd/views"))
 app.use(express.static(join(__dirname, "../frontEnd/public")))
+app.set('trust proxy', 1)
 
 app.use(function(req, res) {
 	res.render("404.pug")
